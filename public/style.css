@@ -263,3 +263,85 @@ body{
 .skill-card.large{
     grid-column: 2 span;
 }
+
+/* project section */
+
+.project, .contact{
+    position: relative;
+    padding: 50px 10vw;
+}
+
+.filters{
+    width: fit-content;
+    display: block;
+    margin: 100px auto;
+}
+
+.filter-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    text-transform: capitalize;
+    margin: 0 5px 10px;
+    cursor: pointer;
+}
+
+.filter-btn.active{
+    background: #ff3559;
+    color: #fff;
+}
+
+.project-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+}
+
+.project-card{
+    position: relative;
+    cursor: pointer;
+    display: block;
+}
+
+.project-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-card .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+    text-transform: capitalize;
+    opacity: 0;
+}
+
+.project-name{
+    font-weight: 300;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.tags{
+    position: absolute;
+    bottom: 20px;
+    opacity: 0.6;
+    width: 90%;
+}
+
+.project-card:hover .content{
+    opacity: 1;
+}
+
+.project-card.hide{
+    display: none;
+}
