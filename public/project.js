@@ -9,5 +9,15 @@ let projects = [
         tags: "#javascript, #fullstack",
         image: "project (2).png",
     },
+    {
+        name: "project three",
+        tags: "#javascript, #fullstack",
+        image: "project (1).png",
+    },
+    {
+        name: "project four",
+        tags: "#javascript, #fullstack",
+        image: "project (2).png",
+    },
     // +8 more
 ]
